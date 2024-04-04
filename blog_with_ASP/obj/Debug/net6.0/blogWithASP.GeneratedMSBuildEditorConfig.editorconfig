@@ -9,37 +9,33 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = blogWithASP
 build_property.RootNamespace = blogWithASP
-build_property.ProjectDir = C:\Users\hakan\Desktop\bütün dosyalar\sftw\Asp.NET\Asp.NET-CORE\blog_with_ASP\
+build_property.ProjectDir = C:\Users\hakan\Desktop\bütün dosyalar\sftw\Asp.NET-CORE\blog_with_ASP\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\hakan\Desktop\bütün dosyalar\sftw\Asp.NET\Asp.NET-CORE\blog_with_ASP
+build_property.MSBuildProjectDirectory = C:\Users\hakan\Desktop\bütün dosyalar\sftw\Asp.NET-CORE\blog_with_ASP
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET/Asp.NET-CORE/blog_with_ASP/Views/Home/Index.cshtml]
+[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET-CORE/blog_with_ASP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET/Asp.NET-CORE/blog_with_ASP/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET/Asp.NET-CORE/blog_with_ASP/Views/Shared/Error.cshtml]
+[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET-CORE/blog_with_ASP/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET/Asp.NET-CORE/blog_with_ASP/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET-CORE/blog_with_ASP/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET/Asp.NET-CORE/blog_with_ASP/Views/_ViewImports.cshtml]
+[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET-CORE/blog_with_ASP/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET/Asp.NET-CORE/blog_with_ASP/Views/_ViewStart.cshtml]
+[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET-CORE/blog_with_ASP/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET/Asp.NET-CORE/blog_with_ASP/Views/Shared/_Layout.cshtml]
+[C:/Users/hakan/Desktop/bütün dosyalar/sftw/Asp.NET-CORE/blog_with_ASP/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-sk0b20zt7l

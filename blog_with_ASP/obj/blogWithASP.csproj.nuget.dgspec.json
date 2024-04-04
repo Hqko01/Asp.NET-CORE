@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hakan\\Desktop\\bütün dosyalar\\sftw\\Asp.NET\\blogWithASP\\blogWithASP.csproj": {}
+    "C:\\Users\\hakan\\Desktop\\bütün dosyalar\\sftw\\Asp.NET-CORE\\blog_with_ASP\\blogWithASP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hakan\\Desktop\\bütün dosyalar\\sftw\\Asp.NET\\blogWithASP\\blogWithASP.csproj": {
+    "C:\\Users\\hakan\\Desktop\\bütün dosyalar\\sftw\\Asp.NET-CORE\\blog_with_ASP\\blogWithASP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hakan\\Desktop\\bütün dosyalar\\sftw\\Asp.NET\\blogWithASP\\blogWithASP.csproj",
+        "projectUniqueName": "C:\\Users\\hakan\\Desktop\\bütün dosyalar\\sftw\\Asp.NET-CORE\\blog_with_ASP\\blogWithASP.csproj",
         "projectName": "blogWithASP",
-        "projectPath": "C:\\Users\\hakan\\Desktop\\bütün dosyalar\\sftw\\Asp.NET\\blogWithASP\\blogWithASP.csproj",
+        "projectPath": "C:\\Users\\hakan\\Desktop\\bütün dosyalar\\sftw\\Asp.NET-CORE\\blog_with_ASP\\blogWithASP.csproj",
         "packagesPath": "C:\\Users\\hakan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hakan\\Desktop\\bütün dosyalar\\sftw\\Asp.NET\\blogWithASP\\obj\\",
+        "outputPath": "C:\\Users\\hakan\\Desktop\\bütün dosyalar\\sftw\\Asp.NET-CORE\\blog_with_ASP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

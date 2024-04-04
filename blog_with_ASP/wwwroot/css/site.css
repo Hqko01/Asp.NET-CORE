@@ -1,20 +1,366 @@
-html {
-  font-size: 14px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+    user-select: none;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+::-webkit-scrollbar {
+    width: .5pc;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+::-webkit-scrollbar-thumb {
+    background-color: #353535;
+    border-radius: 2pc;
+}
 
+::-webkit-scrollbar-track {
+    background-color: white;
 }
 
 body {
-    margin-bottom: 60px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #FDFAF5;
 }
+
+.page {
+    position: relative;
+    max-width: 1700px;
+    height: auto;
+}
+
+/*--Header--*/
+
+.header {
+    height: 5.5vw;
+    margin: .5pc;
+    border-radius: 1pc;
+    background-color: white;
+    box-shadow: 0 0 20px #e9e7e2;
+}
+
+    .header .content {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+        .header .content .left {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 2pc;
+        }
+
+            .header .content .left h1 {
+                font-weight: 200;
+                font-size: 2.2vw;
+                color: #353535;
+                text-transform: capitalize;
+            }
+
+        .header .content .right {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 2vw;
+            padding: 0 2pc;
+        }
+
+            .header .content .right div {
+                background-color: #ffffff;
+                border: 1px solid #e7e7e7;
+                border-radius: .7pc;
+                cursor: pointer;
+                transition: .2s ease;
+            }
+
+                .header .content .right div:hover {
+                    transform: translateY(-5%);
+                }
+
+                .header .content .right div:active {
+                    transition: .1s;
+                    transform: translateY(0%);
+                }
+
+                .header .content .right div p {
+                    padding: .7pc 1pc;
+                    font-weight: 300;
+                    color: #103266;
+                    font-size: 1.2vw;
+                }
+
+            .header .content .right .signIn {
+                background-color: #95befd;
+                border: none;
+            }
+
+                .header .content .right .signIn p {
+                    color: white;
+                    font-weight: 600;
+                }
+
+/*--Middle--*/
+
+.middle {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    padding: 3vw;
+}
+
+    .middle .navigation {
+        position: sticky;
+        top: 10%;
+        flex: 1;
+        height: 80vh;
+        background-color: white;
+        box-shadow: 0 0 20px #e9e7e2;
+        border-radius: 2pc;
+        overflow: hidden;
+    }
+
+        .middle .navigation .content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+        }
+
+            .middle .navigation .content .nav {
+                position: relative;
+                width: 70%;
+                min-width: 70%;
+                max-width: 70%;
+                text-align: center;
+                padding: 1vw 2vw;
+                border-radius: 1pc;
+                background-color: #ffffff;
+                box-shadow: 0 0 10px #e9e7e2;
+                cursor: pointer;
+                transition: .2s ease;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+                .middle .navigation .content .nav h2 {
+                    font-weight: 300;
+                    font-size: 1.6vw;
+                    color: #808080;
+                    text-transform: capitalize;
+                }
+
+                .middle .navigation .content .nav.wrap::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 100%;
+                    transform: translate(-50%, -50%);
+                    height: 100%;
+                    width: .5pc;
+                    background-color: #ffffff;
+                    box-shadow: -10px 0 15px 10px #ffffff;
+                    opacity: 1;
+                    transition: .2s ease;
+                }
+
+                .middle .navigation .content .nav:hover {
+                    transform: translateY(-5%);
+                    background-color: #ffffff57;
+                }
+
+                .middle .navigation .content .nav:active {
+                    transition: .1s;
+                    transform: translateY(0%);
+                }
+
+                .middle .navigation .content .nav.selected {
+                    background-color: #103266;
+                    transform: scale(1.1);
+                }
+
+                    .middle .navigation .content .nav.selected h2 {
+                        color: white;
+                    }
+
+                    .middle .navigation .content .nav.selected.wrap::after {
+                        background-color: #103266;
+                        box-shadow: -10px 0 15px 10px #103266;
+                    }
+
+    .middle .contentOutput {
+        flex: 3;
+        min-height: 100vh;
+        background-color: white;
+        box-shadow: 0 0 20px #e9e7e2;
+        border-radius: 2pc;
+    }
+
+        .middle .contentOutput .cnt {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 3vw;
+        }
+
+            .middle .contentOutput .cnt .blog {
+                padding: 1vw 2vw;
+            }
+
+                .middle .contentOutput .cnt .blog h2 {
+                    padding: 1vw .5vw;
+                    font-weight: 400;
+                    font-size: 2.5vw;
+                    color: #103266;
+                }
+
+                .middle .contentOutput .cnt .blog p {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 300;
+                    font-size: 1.2vw;
+                    line-height: 1.5vw;
+                    text-align: justify;
+                    color: #353535;
+                    padding: .5vw;
+                }
+
+/*--Footer--*/
+
+.footer {
+    height: 50vh;
+    margin: .5pc;
+    border-radius: 1pc;
+    background-color: #353535;
+    box-shadow: 0 0 20px #353535;
+    overflow: hidden;
+}
+
+    .footer .content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+        .footer .content .top {
+            flex: 7;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+            .footer .content .top .left {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .footer .content .top .left .communication {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    height: 100%;
+                }
+
+                    .footer .content .top .left .communication div {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1vw;
+                        cursor: pointer;
+                    }
+
+                        .footer .content .top .left .communication div .logo {
+                            position: relative;
+                            width: 2.5vw;
+                            height: 2.5vw;
+                        }
+
+                            .footer .content .top .left .communication div .logo img {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+
+                        .footer .content .top .left .communication div .text {
+                            font-size: 1.4vw;
+                            color: white;
+                            font-weight: 500;
+                        }
+
+            .footer .content .top .right {
+                flex: 3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .footer .content .top .right .cnt {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: center;
+                    gap: 2vw;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    padding: 1vw;
+                    border-radius: .5pc;
+                }
+
+                    .footer .content .top .right .cnt h3 {
+                        font-size: 2vw;
+                        text-transform: capitalize;
+                        color: white;
+                    }
+
+                    .footer .content .top .right .cnt button {
+                        border: none;
+                        outline: none;
+                        padding: .8vw 2.3vw;
+                        border-radius: 2pc;
+                        font-size: 1.4vw;
+                        font-weight: 500;
+                        background-color: white;
+                        color: #103266;
+                        cursor: pointer;
+                    }
+
+        .footer .content .bottom {
+            flex: 1;
+            max-height: 4vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            padding: .5vw;
+            width: 100%;
+        }
+
+            .footer .content .bottom .cnt h3 {
+                font-size: 1.4vw;
+                font-weight: 900;
+                color: white;
+                letter-spacing: .2pc;
+            }
